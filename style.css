@@ -1,0 +1,311 @@
+
+/*Navigaatio */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+  }
+li {
+    border-right:1px solid #bbb;
+  }
+li:last-child {
+    border-right: none;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover:not(.active) {
+    background-color: #c46206;
+  }
+.active {
+    background-color: #c46206;
+  }
+
+
+/*ETUSIVU*/
+header.etusivu {
+    background-image: url("profiilikuva1.jpg");
+    background-position: center;
+    background-size:cover;
+    padding: 1%;
+}
+.sisältö{
+  background-color:white;
+  margin: 0;
+  padding: 10px;
+  border-style: groove;
+  font-size: 20px;
+}
+.nimi{
+    color: #ff9408;
+    text-align: left;
+    font-size: 90px;
+    padding: 400px 50px 400px 50px;
+}
+.tervetuloa {
+    color: black;
+    font-size:xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+.esittely{
+    color:black;
+    text-align: left;
+    padding: auto;
+    max-width: 90%;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold; 
+}
+.esittely2 {
+  color:black;
+  text-align: left;
+  max-width: 90%;
+  font-size: large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+
+/*Ansioluettelo*/
+header.ansioluettelo {
+        background-image: url("profiilikuva1.jpg");
+        background-position: center;
+        background-size: cover;
+        padding: 1%;
+        color: #333;
+        }
+body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+        .sisältö {
+            margin: 20px auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: bisque;
+            font-size: 15px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            color: #e68f0c;
+            border-bottom: 2px solid #e68f0c;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section p {
+           font-size: 1.1em;   
+        }
+        .skills ul {    
+            padding: 0;
+        }
+        .skills li {
+            background-color: #e68f0c;
+            margin: 5px auto;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+      
+
+/*Taidot ja osaaminen*/
+header.taidotjaosaaminen {
+    background-image: url("pilvi1.jpg");
+    background-position: center;
+    background-size:cover;
+    padding: 1%;
+    }
+    header h1 {
+    font-size: 60px;
+    text-align: left;
+    margin: 15%;
+    position: relative;
+    right: 15%;
+    top: 50px;
+}
+.tulossa {
+  height: 100px;
+  font-size: 160%;
+  font-weight: 900;
+  background-color: blanchedalmond;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Yhteystiedot*/
+header.yhteystiedot {
+  background-image: url("profiilikuva1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 1%;
+}
+.lomake{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  text-align: center;
+}
+/* Viestilaatikot */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #4b2902;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+/* Lähetä button */
+input[type=submit] {
+  background-color: #e68f0c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Kursori valinta Lähetä button*/
+input[type=submit]:hover {
+  background-color: #4b2902;
+}
+/* Alue tausta*/
+.container {
+  border-radius: 5px;
+  background-color: bisque;
+  padding: 60px;
+}
+/*Yhteystiedot*/
+
+
+
+/*FOOTER*/
+footer {
+  text-align: left;
+  padding: 5%;
+  background-color:rgb(221, 191, 154);
+  color: black;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-style: double;
+}
+/*FOOTER*/
+
+
+
+
+
+/*Responiisvuus asetukset 700PX*/
+@media only screen and (max-width: 700px){
+  /*Header*/
+
+.nimi{
+  padding: 400px 10px 400px 10px;
+  font-size: 70px;
+}
+/*Header*/
+/*Etusivu*/
+.sisältö{
+  padding: 60px;
+}
+.esittely{ 
+    max-width: 90%;
+}
+.esittely2 {
+  max-width: 90%;
+}
+/*Etusivu*/
+/*Ansioluettelo*/
+.skills li {     
+  margin: 6px auto;
+  padding: 1px;
+  border-radius: 5px;
+  font-size: 9px;
+  text-align: center;
+  }
+/*Ansioluettelo*/
+
+/*Yhteystiedot*/
+
+/* Alue tausta*/
+.container {
+  padding: 20px;
+}
+/*Yhteystiedot*/
+}
+
+
+
+
+
+/*Responiisvuus asetukset 1025PX*/
+
+@media only screen and (min-width: 1025px) {
+  header.etusivu {
+    min-height: 100vh;
+    background-image: url("profiilikuva1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .nimi{
+    padding: 400px 50px 400px 50px;
+  }
+.sisältö{
+  padding: 80px;
+  
+}
+.esittely{ 
+max-width:30%;
+}
+.esittely2 {
+  width: 30%;
+}
+header.ansioluettelo {
+  padding: 5%;
+  }
+  .section p {
+    width: 50%;
+    }
+  .skills li {
+    width: 50%;
+      margin: 5px auto;
+      padding: 10px;
+      border-radius: 1px;
+      font-size: 20px;
+      text-align: center;
+  }
+}
+/*Yhteystiedot*/
+/* Alue tausta*/
+
+.container {
+  padding: 60px;
+}
+/* Viestilaatikot */
+input[type=text], select, textarea {
+  display: block;
+  margin: 10px auto;
+  width: 50%; 
+}
+
+/* Lähetä button */
+input[type=submit] {
+  display: block;
+  margin: 10px auto;
+  }
+/*Yhteystiedot*/
